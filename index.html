@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Application Form</title>
+    <style>
+        body {
+            background-color: #6a5acd;
+            font-family: Arial, sans-serif;
+            color: white;
+            padding: 20px;
+        }
+
+        label {
+            width: 150px;
+            margin-top: 10px;
+            vertical-align: top;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="number"],
+        select,
+        textarea {
+            width: 200px;
+            padding: 5px;
+            margin-top: 5px;
+        }
+
+        textarea {
+            height: 60px;
+        }
+
+        table, th, td {
+            border: 1px solid white;
+            color: white;
+        }
+
+        th, td {
+            padding: 5px;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 700px;
+        }
+
+        .buttons {
+            margin-top: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form>
+            <label>FIRST NAME:</label><input type="text" maxlength="30" /><br/>
+            <label>LAST NAME:</label><input type="text" maxlength="30" /><br/>
+            <label>DATE OF BIRTH:</label>
+            Day: <input type="number" min="1" max="31" style="width: 50px;" />
+            Month: <input type="number" min="1" max="12" style="width: 50px;" />
+            Year: <input type="number" min="1900" max="2025" style="width: 60px;" /><br/>
+            <label>EMAIL ID:</label><input type="email" /><br/>
+            <label>MOBILE NUMBER:</label><input type="text" maxlength="10" /><br/>
+            <label>GENDER:</label>
+            <input type="radio" name="gender" value="Male" /> Male
+            <input type="radio" name="gender" value="Female" /> Female<br/>
+            <label>ADDRESS:</label><textarea></textarea><br/>
+            <label>CITY:</label><input type="text" maxlength="30" /><br/>
+            <label>PIN CODE:</label><input type="text" maxlength="6" /><br/>
+            <label>STATE:</label><input type="text" maxlength="30" /><br/>
+            <label>COUNTRY:</label><input type="text" value="Pakistan" readonly /><br/>
+            <label>HOBBIES:</label>
+            Drawing <input type="checkbox" />
+            Singing <input type="checkbox" />
+            Dancing <input type="checkbox" />
+            Sketching <input type="checkbox" />
+            Others <input type="checkbox" /><br/><br/>
+
+            <label>QUALIFICATION:</label><br/>
+            <table>
+                <tr>
+                    <th>Sl.No.</th>
+                    <th>Examination</th>
+                    <th>Board</th>
+                    <th>Percentage</th>
+                    <th>Year of Passing</th>
+                </tr>
+                <tr>
+                    <td>1</td><td>Class X</td><td><input type="text" maxlength="10" /></td><td><input type="text" maxlength="5" /></td><td><input type="text" maxlength="4" /></td>
+                </tr>
+                <tr>
+                    <td>2</td><td>Class XII</td><td><input type="text" maxlength="10" /></td><td><input type="text" maxlength="5" /></td><td><input type="text" maxlength="4" /></td>
+                </tr>
+                <tr>
+                    <td>3</td><td>Graduation</td><td><input type="text" maxlength="10" /></td><td><input type="text" maxlength="5" /></td><td><input type="text" maxlength="4" /></td>
+                </tr>
+                <tr>
+                    <td>4</td><td>Masters</td><td><input type="text" maxlength="10" /></td><td><input type="text" maxlength="5" /></td><td><input type="text" maxlength="4" /></td>
+                </tr>
+            </table><br/>
+
+            <label>COURSES APPLIED FOR:</label>
+            BCA <input type="radio" name="course" />
+            B.Com <input type="radio" name="course" />
+            B.Sc <input type="radio" name="course" />
+            B.A <input type="radio" name="course" /><br/>
+
+            <div class="buttons">
+                <input type="submit" value="Submit" />
+                <input type="reset" value="Reset" />
+            </div>
+        </form>
+    </div>
+</body>
+</html>
